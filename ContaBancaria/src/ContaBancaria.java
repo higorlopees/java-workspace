@@ -83,10 +83,11 @@ public class ContaBancaria {
 		}
 	}
 	
-	public void imprimir() {
-		System.out.println("Conta bancária: " + this.nome + " - " + this.cpf);
-		System.out.println("		Agência: " + this.agencia + " Conta corrente: " + this.conta + "-" + this.dv);
-		System.out.printf("		Saldo em conta: R$ %.2f\n", this.saldo);
-		System.out.println("------------------------------------------------------");
+	public String imprimir() {
+		//System.out.println("Conta bancária: " + this.nome + " - " + this.cpf);
+		//System.out.println("		Agência: " + this.agencia + " Conta corrente: " + this.conta + "-" + this.dv);
+		//System.out.printf("		Saldo em conta: R$ %.2f\n", this.saldo);
+		//System.out.println("------------------------------------------------------");
+		return "Conta bancária: " + this.nome + " - " + this.cpf + "\n" + "		Agência: " + this.agencia + " Conta corrente: " + this.conta + "-" + this.dv + "\n" + "		Saldo em conta: R$ " + this.saldo;
 	}
 }
